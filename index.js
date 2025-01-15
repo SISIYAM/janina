@@ -49,7 +49,7 @@ function preventLoginAccess(req, res, next) {
 
 // Routes
 app.get("/", (req, res) => {
-  res.render("index", { error: null });
+  res.render("login", { error: null });
 });
 
 app.get("/login", preventLoginAccess, (req, res) => {
